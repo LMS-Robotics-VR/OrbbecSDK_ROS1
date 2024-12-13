@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<robot name="azure-kinect" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:include filename="$(find orbbec_camera)/urdf/femto_bolt_macro.urdf.xacro" />
+  <link name="world"/>
+
+  <xacro:femto_bolt prefix="" parent="world" use_nominal_extrinsics="false">
+  <origin xyz="0 0 0" rpy="0 0 0"/>
+  </xacro:femto_bolt>
+</robot>
